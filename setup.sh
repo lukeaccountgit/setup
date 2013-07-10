@@ -6,7 +6,9 @@
 sudo apt-get install -y git-core
 git config --global user.name "Luke Liu"
 git config --global user.email lukekliuster@gmail.com
-
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
 
 # Install heroku
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
@@ -25,6 +27,7 @@ nvm use v0.10.12
 npm install -g jshint
 npm install cheerio
 npm install commander
+npm install restler
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
